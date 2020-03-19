@@ -82,6 +82,7 @@ body{
 .meira{
     max-height: 500px;
     max-width: 300px;
+    border-radius: 100%;
 }
 
 @media (min-width: 1000px){
@@ -109,13 +110,17 @@ align-content: center;
     .navbar-brand{
         display: none;
     }
+    .meira{
+        max-height: 200px;
+        max-width: 200px;
+    }
 }
 p{
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
-.download{
+a.download{
     font-size: 25px;
     color: black;
     font-family: 'Raleway', sans-serif;
@@ -124,7 +129,7 @@ p{
     padding: 10px;
 
 }
-.download:hover{
+a.download:hover{
     text-decoration: none;
     color: white;
     border: #1d9c9f 2px solid;
@@ -147,14 +152,14 @@ a.glyphicon:hover{
     -webkit-transition: ease-in .75s;
     transition: ease-in .75s;
 }
-i.fab {
+a.fab {
     color: black !important;
     font-size: 36px;
     border: black 2px solid;
     padding: 10px;
     margin-left: 10px;
 }
-i.fab:hover{
+a.fab:hover{
     color: white !important;
     text-decoration: none;
     border: #1d9c9f 2px solid;
@@ -233,15 +238,55 @@ i.fab:hover{
       transition: ease-in .75s;
   }
   .section2{
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-    justify-content: center;
-    padding: 45px; 
+    padding: 45px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; 
+  }
+  @media(min-width: 800px){
+      .section2{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+      justify-content: center; 
+      -webkit-box-orient: horizontal; 
+      -webkit-box-direction: normal; 
+              flex-direction: row;
+      }
+ 
   }
   .innerBox{
       padding-right: 25px;
   }
   .box1{
-     padding-top: 150px;
+
   }
+  .wrapper{
+      max-width: 700px;
+      max-height: 700px;
+  }
+  .animation{
+    padding: 45px;
+
+  }
+  .responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px; overflow: hidden;
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

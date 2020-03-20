@@ -347,25 +347,59 @@ padding: 40px;
 }
 figure {
     position: relative;
-    display: inline-block;
+    display: inline-block !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
   }
+.page3{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap !important;
+}
+@media(max-width: 900px){
+.page3{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
+            -webkit-box-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center;
+}
+}
+
 @media(min-width:900px){
-    .portfolio1{
+    .page3{
         display: -webkit-box;
         display: flex;
         -webkit-box-pack: center;
-                justify-content: space-around;
+                justify-content: center;
         -webkit-box-align: center;
                 align-items: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                flex-flow: row wrap;
+                        
     }
-    .portfolio2{
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: space-around;
-        -webkit-box-align: center;
-                align-items: center;
-    }
+
+ 
+ 
+}
+.portfolio1{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-flow: row wrap;
+            
+            
+                    
 }
   .img {
     border-radius: 50%;
@@ -373,7 +407,7 @@ figure {
     width:300px;
       height:300px;
       padding:30px;
-      opacity: 0.45;
+      opacity: 0.9;
       -webkit-filter: blur(3px);
               filter: blur(3px);
         border-radius: 50%;
@@ -381,10 +415,10 @@ figure {
   
   }
   .img:hover {
-          color: white;
-          opacity: 5;
-          -webkit-filter: blur(0px);
-                  filter: blur(0px);
+-webkit-filter: blur(0px);
+filter: blur(0px);
+-webkit-transition: ease-in .5s;
+transition: ease-in .5s;
       }
   
   figcaption {
@@ -406,6 +440,9 @@ figure {
     display: none;
   }
   .page3{
-      background-image: url(../img/marble.jpg);
+      background-image: url(../img/rainbow.jpg);
+      background-position: center top;
+      -webkit-box-pack: center;
+              justify-content: center;
   }
   

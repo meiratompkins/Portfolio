@@ -114,6 +114,10 @@ align-content: center;
         max-height: 200px;
         max-width: 200px;
     }
+    .card-img-top{
+        max-height: 300px !important;
+        max-width: 300px !important; 
+    }
 }
 p{
     font-size: 30px;
@@ -261,6 +265,21 @@ a.fab:hover{
       }
  
   }
+
+  @media(min-width: 1300px){
+    .card-group{
+        display: -webkit-box;
+        display: flex;
+        justify-content: space-around;
+    }
+  
+  }
+  @media(max-width:1460px){
+  .card{
+        -webkit-box-align: center !important;
+                align-items: center !important;
+        }
+  }
   .innerBox{
       padding-right: 25px;
   }
@@ -289,4 +308,40 @@ a.fab:hover{
     left: 0;
     width: 100%;
     height: 100%;
+}
+.card-group{
+padding: 40px;
+}
+.card-img-top{
+    max-width: 500px;
+    max-height: 300px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+      opacity: 0.5;
+      -webkit-filter: blur(3px);
+              filter: blur(3px);
+        vertical-align: middle;   
+}
+.card-img-top:hover {
+    color: white;
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+}
+.card{
+    padding: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+}
+.card-title{
+    font-family: 'Abril Fatface', cursive !important; 
+    font-size: 20px;  
+}
+.card-text{
+    font-size: 15px;
 }

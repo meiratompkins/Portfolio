@@ -329,10 +329,8 @@ a.fab:hover{
     width: 100%;
     height: 100%;
 }
-.card-group{
-padding: 40px;
-}
-.card-img-top{
+
+img.img{
     max-width: 500px;
     max-height: 300px;
     padding-bottom: 20px;
@@ -342,29 +340,13 @@ padding: 40px;
               filter: blur(3px);
         vertical-align: middle;   
 }
-.card-img-top:hover {
+img.img:hover {
     color: white;
     opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
 }
-.card{
-    padding: 20px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-            align-items: center;
-}
-.card-title{
-    font-family: 'Abril Fatface', cursive !important; 
-    font-size: 20px;  
-}
-.card-text{
-    font-size: 15px;
-}
+
 figure {
     position: relative;
     display: inline-block !important;

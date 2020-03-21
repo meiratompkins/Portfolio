@@ -234,6 +234,7 @@ a.fab:hover{
   a.fas{
       font-size: 5em;
       color: black;
+      text-decoration: none;
   }
  a.fas:hover{
       color: #1d9c9f;

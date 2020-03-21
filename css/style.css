@@ -405,7 +405,7 @@ figure {
             
                     
 }
-  .img {
+  img.img {
     border-radius: 50%;
     vertical-align: middle;
     width:300px;
@@ -418,7 +418,7 @@ figure {
         vertical-align: middle;
   
   }
-  .img:hover {
+  img.img:hover {
 -webkit-filter: blur(0px);
 filter: blur(0px);
 -webkit-transition: ease-in .5s;
@@ -441,11 +441,11 @@ transition: ease-in .5s;
   
   }
   
-  .img:hover + figcaption {
+  img.img:hover + figcaption {
     display: none;
   }
   .page3{
-      background-image: url(../img/rainbow.jpg);
+      background-image: url(../img/pinkmarble.jpg);
       background-position: center top;
       -webkit-box-pack: center;
               justify-content: center;

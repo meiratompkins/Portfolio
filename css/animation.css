@@ -1,0 +1,104 @@
+.flex{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
+            
+}
+@media(min-width:700px){
+.flex{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                    flex-direction: row;
+            padding: 70px;
+}
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0%;
+   
+}
+a.leftbutton{
+    font-size: 25px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    border: black 2px solid;
+    padding: 10px;
+    text-decoration: none;
+
+}
+a.leftbutton:hover{
+    text-decoration: none;
+    color: white;
+    border: #1d9c9f 2px solid;
+    background-color: #1d9c9f;
+    -webkit-transition: ease-in .75s;
+    transition: ease-in .75s;
+}
+h1{
+    margin:0%;
+    font-family: 'Abril Fatface', cursive;
+  
+}
+.right{
+display: -webkit-box;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+        flex-direction: column;
+        margin: 30px;
+       
+}
+.gif{
+    max-width: 500px;
+    max-height: 300px;
+}
+.box{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column; 
+}
+
+@media(min-width:700px){
+    .box{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                        flex-direction: row; 
+    }
+    .right{
+        padding-left: 4em;
+        margin: 0px;
+    }
+}
+@media(max-width:650px){
+    .gif{
+        max-width: 250px;
+        max-height: 150px;
+    }
+}

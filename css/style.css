@@ -55,9 +55,7 @@ background-color: black;
 .navbar-light .navbar-nav{
     margin-top: 20px;
 }
-body{
-    
-}
+
 .body{
     background-image: url("../img/morepink.jpg");
     background-position: center top;
@@ -233,14 +231,22 @@ a.fab:hover{
      0%, 100%, 0% {-webkit-transform: translateY(0);transform: translateY(0);}
     50% {-webkit-transform: translateY(-5px);transform: translateY(-15px);}
   } 
-  i.fas{
+  a.fas{
       font-size: 5em;
+      color: black;
   }
-  i.fas:hover{
+ a.fas:hover{
       color: #1d9c9f;
       -webkit-transition: ease-in .75s;
       transition: ease-in .75s;
+      text-decoration: none;
   }
+  a.fas:visited{
+    color: black;
+    -webkit-transition: ease-in .75s;
+    transition: ease-in .75s;
+    text-decoration: none;
+}
   .section2{
     padding: 45px;
     display: -webkit-box;
@@ -251,7 +257,8 @@ a.fab:hover{
             align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column; 
+            flex-direction: column;
+            margin-bottom: 50px;
   }
   @media(min-width: 800px){
       .section2{
@@ -283,9 +290,7 @@ a.fab:hover{
   .innerBox{
       padding-right: 25px;
   }
-  .box1{
 
-  }
   .wrapper{
       max-width: 700px;
       max-height: 700px;
@@ -391,12 +396,14 @@ figure {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            flex-flow: row wrap;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
             
             
                     
@@ -433,6 +440,7 @@ transition: ease-in .5s;
     text-align: center; 
     font-family: 'Raleway',sans-serif;
     font-size: 25px;
+    text-shadow: 2px 2px 5px hotpink;
   
   }
   
@@ -445,4 +453,49 @@ transition: ease-in .5s;
       -webkit-box-pack: center;
               justify-content: center;
   }
-  
+.foot{
+    display: -webkit-box;
+	display: flex;
+	justify-content: space-around;
+	-webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+  @media(min-width:900px){
+  .foot {
+	display: -webkit-box;
+	display: flex;
+	justify-content: space-around;
+	-webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+        }
+}
+.info{
+    padding: 20px;
+}
+.buttonorg{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+    align-items: center;
+}
+.footer{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px; 
+}
+.portfolio2{
+    padding: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px; 
+}

@@ -445,7 +445,7 @@ transition: ease-in .5s;
     display: none;
   }
   .page3{
-      background-image: url(../img/rainbow.jpg);
+      background-image: url(../img/morepink.jpg);
       background-position: center top;
       -webkit-box-pack: center;
               justify-content: center;
@@ -495,4 +495,9 @@ transition: ease-in .5s;
     padding: 30px;
     font-family: 'Raleway',sans-serif;
     font-size: 20px; 
+}
+@media(max-width: 350px){
+    .typewriter p.type{
+        font-size: 15px !important;
+    }
 }

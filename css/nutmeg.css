@@ -136,6 +136,7 @@ embed{
     border-radius: 0px;
     height: 90vh;
     width: 100vw;
+    position: center;
 }
 p.bold{
     font-weight: bold;
@@ -168,3 +169,4 @@ p.bold{
                 -webkit-box-direction: normal;
                         flex-direction: row; 
     }
+}

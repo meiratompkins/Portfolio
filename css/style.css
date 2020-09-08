@@ -406,15 +406,12 @@ figure {
                     
 }
   img.img {
-    border-radius: 50%;
     vertical-align: middle;
     width:300px;
       height:300px;
-      padding:30px;
       opacity: 0.9;
       -webkit-filter: blur(3px);
               filter: blur(3px);
-        border-radius: 50%;
         vertical-align: middle;
   
   }
@@ -445,7 +442,6 @@ transition: ease-in .5s;
     display: none;
   }
   .page3{
-      background-image: url(../img/MOON.jpg);
       background-position: center;
       -webkit-box-pack: center;
               justify-content: center;

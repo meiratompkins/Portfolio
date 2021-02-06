@@ -47,7 +47,10 @@
     position: relative;
     float: right;
     margin: 0 auto!important;
-    padding:0px!important;
+    padding-top:15px!important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     background-color: transparent;
     background-image: none;
     border: 1px solid transparent;

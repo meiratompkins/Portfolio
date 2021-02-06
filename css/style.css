@@ -72,8 +72,9 @@ background-color: black;
 }
 
 .body{
-    background-image: url("../img/fall2.jpg");
+    background-image: url("../img/white_background.jpg");
     background-position: center top;
+    background-size: cover;
 }
 .section1{
     margin-right: 2em;
@@ -290,6 +291,12 @@ a.fab:hover{
             flex-direction: column;
             margin-bottom: 50px;
   }
+
+.about{
+    padding:30px;
+}
+
+
   @media(min-width: 800px){
       .section2{
         display: -webkit-box;

@@ -23,7 +23,8 @@
 }
 .nav li {
 	display: inline;
-	color: black
+	color: black;
+    text-align:center;
 }
 
 .navbar-light .navbar-nav > li > a {

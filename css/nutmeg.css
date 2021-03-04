@@ -320,3 +320,7 @@ justify-content: center;
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.text{
+    padding: 0px;
+}

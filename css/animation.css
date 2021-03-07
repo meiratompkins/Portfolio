@@ -37,7 +37,12 @@ p{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    margin: 0%;
+    line-height: 1.75em;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   
    
 }
 a.leftbutton{
@@ -77,6 +82,7 @@ display: flex;
 -webkit-box-direction: normal;
         flex-direction: column;
         margin: 30px;
+        text-align: center;
         
        
 }

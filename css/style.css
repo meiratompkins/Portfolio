@@ -34,6 +34,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-style: normal;
+    transition: ease-out .75s;
 }
 
 .navbar-light .navbar-nav li a:hover {
@@ -81,6 +82,7 @@ background-color: black;
     margin-left: 1.5em;
     margin-top: 150px;
     padding-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -90,7 +92,7 @@ background-color: black;
 }
 .h1, h1{
     font-size: 59px !important;
-    font-family: 'Abril Fatface', cursive !important; 
+    font-family: font-family: 'Lato', sans-serif;
 }
 #meiraImg{
     max-height: 500px;
@@ -101,6 +103,7 @@ background-color: black;
     max-height: 500px;
     max-width: 300px;
     border-radius: 100%;
+    padding: 10px;
 }
 
 @media (min-width: 1000px){
@@ -294,6 +297,8 @@ a.fab:hover{
     -webkit-box-direction: normal;
             flex-direction: column;
             margin-bottom: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
   }
 
 .about{
@@ -301,7 +306,7 @@ a.fab:hover{
 }
 
 
-  @media(min-width: 800px){
+  @media(min-width: 1000px){
       .section2{
         display: -webkit-box;
         display: flex;
@@ -361,16 +366,16 @@ img.img{
     max-height: 300px;
     padding-bottom: 20px;
     vertical-align: middle;
-      opacity: 0.5;
-      -webkit-filter: blur(3px);
-              filter: blur(3px);
-        vertical-align: middle;   
+    opacity: 0.5;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    vertical-align: middle;   
 }
 img.img:hover {
     color: white;
     opacity: 1;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
 }
 
 figure {
@@ -434,22 +439,54 @@ figure {
   img.img {
     vertical-align: middle;
     width:300px;
-      height:300px;
-      opacity: 0.9;
-      -webkit-filter: blur(3px);
-              filter: blur(3px);
-        vertical-align: middle;
+    height:300px;
+    opacity: 0.9;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    vertical-align: middle;
+    filter: brightness(30%);
+    transition: all 400ms ease!important;
+
+
   
   }
   img.img:hover {
--webkit-filter: blur(0px);
-filter: blur(0px);
--webkit-transition: ease-in .5s;
-transition: ease-in .5s;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    transition: all 400ms ease!important;
+    filter: brightness(100%);
+
       }
-  
+
+img.img2{
+        vertical-align: middle;
+        width:600px;
+          height:800px;
+          opacity: 0.9;
+          -webkit-filter: blur(3px);
+        filter: blur(3px);
+        filter: brightness(30%);
+        vertical-align: middle;
+        transition: all 400ms ease!important;
+
+      }
+  img.img2:hover{
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    transition: all 400ms ease!important;
+    filter: brightness(100%);
+
+  }
+
+  @media(max-width:600px){
+    img.img2{
+        vertical-align: middle;
+        width:300px;
+          height: 400px;
+  }
+}
+
   figcaption {
-    border-radius: 10px; 
     position: absolute;
     top: 50%;
     width: 100%;
@@ -459,11 +496,14 @@ transition: ease-in .5s;
     text-align: center; 
     font-family: 'Raleway',sans-serif;
     font-size: 25px;
-    text-shadow: 2px 2px 5px hotpink;
-  
+    text-shadow: 2px 2px 5px gray;
+    padding: 15px;  
   }
   
   img.img:hover + figcaption {
+    display: none;
+  }
+  img.img2:hover + figcaption {
     display: none;
   }
   .page3{
@@ -521,4 +561,13 @@ transition: ease-in .5s;
     .typewriter p.type{
         font-size: 15px !important;
     }
+}
+
+
+h2{
+    text-align: center;
+}
+
+a:focus, a:hover {
+    text-decoration: none!important;
 }

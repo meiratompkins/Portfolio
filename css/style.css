@@ -92,8 +92,9 @@ background-color: black;
 }
 .h1, h1{
     font-size: 59px !important;
-    font-family: font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
 #meiraImg{
     max-height: 500px;
     max-width: 300px;

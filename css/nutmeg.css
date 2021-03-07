@@ -6,7 +6,11 @@
     flex-direction: column;
  
 }
-
+@media(max-width:500px){
+    .flex{
+        margin-top: 95px;
+    }
+}
 @media(min-width:700px){
 .flex{
     display: -webkit-box;
@@ -90,6 +94,8 @@ a.leftbutton{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
+    background-color: white;
 
 }
 a.leftbutton:hover{
@@ -189,7 +195,7 @@ display: flex;
         -webkit-box-direction: normal;
         flex-direction: row; 
     }
-    .rig
+
 }
 
 .box4{
@@ -440,6 +446,7 @@ h2{
     position: relative;
     margin-left: 60%;
     margin-top: 15%;
+    margin-bottom: 5%;
 }
 .img-mobile{
     width: 30vw!important;;

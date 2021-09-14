@@ -39,7 +39,7 @@
 
 .navbar-light .navbar-nav li a:hover {
     height: 100%;
-    background-color:#DEBDCE;
+    background-color: black;
     -webkit-transition: ease-in .75s;
     transition: ease-in .75s;
     color: white;

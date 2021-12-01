@@ -6,7 +6,7 @@
     <title>Meira Tompkins</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Julius+Sans+One|Raleway:300,400&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logo16.png">
+    <link rel="shortcut icon" href="img/MT-Design-16px-01.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -33,144 +33,108 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav text-right">
-            <a class="navbar-brand"href="index.html">
-                <img src="img/logo192.png" alt="Meira Tompkins Logo">
-            </a>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="#showreel">Showreel</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="section1">
+    <section style="margin-bottom: 10px!important;" class="section1">
       <div class="box1">
         <div class="typewriter">
           <h1 class="h1">Meira Tompkins</h1>
-          <p class="type"> Designer // Coder // Artist </p>
       </div>
-      
-      <!-- <div class="box2">
-        <a class="download" href="img/Resume.pdf" download="Resume">Resume</a>
-        <a class="glyphicon glyphicon-envelope" href="mailto:meira.tompkins@uconn.edu" role="button"></a>
-        <a class="fab fa-linkedin-in" style="font-size:36px"href="https://www.linkedin.com/in/meira-tompkins-11a3961a1/" role="button"></i></a>
-      </div> -->
-      <div class="bounce">
-        <a href="#workexperience" class="fas fa-angle-down"></a>
-      </div>
+      <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
     </section>
-</section>
+  <div id="showreel">
+    <video autoplay muted loop id="myVideo">
+      <source src="img/Show-Reel-3.mp4" type="video/mp4">
+    </video>
+  </div>
 
 
-<h2>Work Experience</h2>
-<div class="portfolio1" id="workexperience">
+<div class="portfolio1" id="portfolio">
 
   <a class="link" href="nutmeg.html">
     <figure>
-      <img class="img2" src="img/mag_600.jpg" alt="Nutmeg Mag"/>
+      <img class="img2" src="img/Explore-Mag-4x3.png" alt="Nutmeg Mag"/>
       <figcaption>Nutmeg Magazine</figcaption> 
     </figure>
     </a>
 
-    <a class="link" href="usg.html">
+    <a class="link" href="mem.html">
       <figure>
-        <img class="img2" src="img/Student Services 600.png">
-        <figcaption> USG Graphic Design </figcaption>
+        <img class="img2" src="img/MEM-Computer-4x3.png">
+        <figcaption> MEM Wordpress Web Development </figcaption>
       </figure>
     </a>
 
-    <a class="link" href="ITS-Web_Dev.html">
+    <a class="link" href="library.html">
       <figure>
-        <img class="img2" src="img/wellsat3.0.png" alt="Nutmeg Mag"/>
-        <figcaption>ITS Web Development</figcaption> 
+        <img class="img2" src="img/Library-Marketing_Screens-4x3.png" alt="Nutmeg Mag"/>
+        <figcaption>UConn Library <br> Graphic Design</figcaption> 
       </figure>
       </a>
 
-</div>
-<h2>Coursework</h2>
-
-    <div class="page3" id="portfolio">
-      <div class="portfolio1">
-
-        <a class="link" href="money-transfer-app.html">
-          <figure>
-           <img class="img" src="img/cashcow.png" alt="Cow Logo">
-            <figcaption>Money Transfer App</figcaption>
-          </figure>
-          </a>
-
-        <a class="link" href="animation.html">
+      
+      <a class="link" href="UConn-Connect.html">
         <figure>
-         <img class="img" src="img/css2.png" alt="CSS Animation">
-          <figcaption>CSS Animation</figcaption>
-        </figure>
-        </a>
-
-        <a class="link" href="UI_Design.html">
-          <figure>
-            <img class="img" src="img/Typographical Exploration 6 Square.png">
-            <figcaption>Typographical Explorations</figcaption>
-          </figure>
-          </a>
-    
-
-        <a class="link" href="ux.html">
-          <figure>
-            <img class="img" src="img/wellscan.png">
-            <figcaption>WellSCAN Prototype</figcaption>
-          </figure>
-          </a>
-    
-        <a class="link" href="UConn-Connect.html">
-        <figure>
-          <img class="img" src="img/uconnect.png">
+          <img class="img2" src="img/UConn-Connect-pink.png">
           <figcaption> UConn Connect </figcaption>
         </figure>
         </a>
-
-        <a class="link" href="animation_editing.html">
+        
+        <a class="link" href="scripting.html">
           <figure>
-            <img class="img" src="img/herbs.png">
-            <figcaption>Animation // Editing </figcaption>
+            <img class="img2" src="img/Scripting-Page.png">
+            <figcaption>JavaScript Landing Page</figcaption>
           </figure>
         </a>
 
         <a class="link" href="Shop-Consious.html">
           <figure>
-            <img class="img" src="img/shop-consious.png">
-            <figcaption>Shop Consious Prototype</figcaption>
+            <img class="img2" src="img/Shop-Conscious-5-apps-400x300.png">
+            <figcaption>Shopping App</figcaption>
           </figure>
         </a>
 
-        <a class="link" href="scripting.html">
+        <a class="link" href="EHS.html">
           <figure>
-            <img class="img" src="img/scripting 3.png">
-            <figcaption> Scripting // JavaScript</figcaption>
+            <img class="img2" src="img/Vyond-4x3.png">
+            <figcaption>UConn Environmental Health and Safety</figcaption>
           </figure>
         </a>
 
-        <a class="link" href="miscellaneous.html">
-          <figure>
-            <img class="img" src="img/starwars2.jpg">
-            <figcaption>Miscellaneous </figcaption>
-          </figure>
-        </a>
-      </div>
-    </div>
+ 
 
+</div>
     <footer class="foot" id="contact">
       <div class="info">
         <div class="footer">Meira Tompkins</div>
         <div class="footer">mtompkins09@yahoo.com</div>
         <div class="footer">meira.tompkins@uconn.edu</div>
-        <div class="footer">(978)-846-9699</div>
         <br>
-        <div class="footer">Connecticut\Massachusetts</div>
       </div>
       <div class="portfolio2">Portfolio Website Designed and Coded by Meira Tompkins</div>
       <div class="buttonorg">
-        <a class="download" href="img/Meira-Tompkins-Resume-Internship.pdf" download="Resume">Resume</a>
+        <a class="download" href="img/Resume/Meira-Tompkins-Resume.pdf" download="Meira-Tompkins-Resume">Resume</a>
         <a class="glyphicon glyphicon-envelope" href="mailto:meira.tompkins@uconn.edu" role="button"></a>
         <a class="fab fa-linkedin-in" style="font-size:36px"href="https://www.linkedin.com/in/meira-tompkins-11a3961a1/" role="button"></i></a>
       </div>
@@ -178,18 +142,8 @@
     </footer>
   
 
-  
-
-
-    
-
-
-
-
-
-
-  
 <script src="js/zenscroll-min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/morph.js"></script>
 </body>
 </html>

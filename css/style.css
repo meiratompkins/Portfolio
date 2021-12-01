@@ -8,7 +8,6 @@
     margin-right: 0% !important;
 }
 .navbar, .navbar-light, .container{
-    margin-bottom: 20px;
     margin-right: 0% !important;
     margin-left: 0% !important;
     padding: 0% !important;
@@ -64,25 +63,39 @@ background-color: black;
     align-content: flex-end;
 }
 .navbar-brand>img {
-    display: block;
+    display: none!important;
     max-height: 100px;
     padding-bottom: 20px;
 }
-.navbar-light .navbar-nav{
-    margin-top: 20px;
-}
+
 
 .body{
-    background-image: url("../img/white_background.jpg");
     background-position: center top;
     background-size: cover;
-}
+    background:black;
+    background-size: 200% 400%;
+    animation: gradient 15s ease infinite;
+    color:white
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+
 .section1{
     margin-right: 2em;
     margin-left: 1.5em;
-    margin-top: 150px;
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -91,8 +104,8 @@ background-color: black;
     
 }
 .h1, h1{
-    font-size: 59px !important;
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 
 #meiraImg{
@@ -109,11 +122,13 @@ background-color: black;
 
 @media (min-width: 1000px){
     .section1{
-        display: -webkit-box;
-display: flex;
--webkit-box-pack: center;
-justify-content: center;
-align-content: center;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      
+
     }
 
 }      
@@ -145,21 +160,22 @@ p{
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    margin-bottom: 1em!important;
 }
 a.download{
     font-size: 25px;
-    color: black;
+    color: pink;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    border: black 2px solid;
+    font-weight: 700;
+    border: pink 2px solid;
     padding: 10px;
 
 }
 a.download:hover{
     text-decoration: none;
-    color: white;
-    border: #1d9c9f 2px solid;
-    background-color: #1d9c9f;
+    color: black;
+    border: pink 2px solid;
+    background-color: pink;
     -webkit-transition: ease-in .75s;
     transition: ease-in .75s;
 }
@@ -184,32 +200,32 @@ a.download2:hover{
 }
 
 a.glyphicon {
-    color: black !important;
+    color: pink !important;
     font-size: 36px;
-    border: black 2px solid;
+    border: pink 2px solid;
     padding: 10px;
     margin-left: 10px;
 }
 a.glyphicon:hover{
-    color: white !important;
+    color: black !important;
     text-decoration: none;
-    border: #1d9c9f 2px solid;
-    background-color: #1d9c9f;
+    border: pink 2px solid;
+    background-color: pink;
     -webkit-transition: ease-in .75s;
     transition: ease-in .75s;
 }
 a.fab {
-    color: black !important;
+    color: pink !important;
     font-size: 36px;
-    border: black 2px solid;
+    border: pink 2px solid;
     padding: 10px;
     margin-left: 10px;
 }
 a.fab:hover{
-    color: white !important;
+    color: black !important;
     text-decoration: none;
-    border: #1d9c9f 2px solid;
-    background-color: #1d9c9f;
+    border: pink 2px solid;
+    background-color: pink;
     -webkit-transition: ease-in .75s;
     transition: ease-in .75s;
 }
@@ -221,54 +237,8 @@ a.fab:hover{
             justify-content: flex-start;
             margin-bottom: 15px;
 }
-.typewriter h1 {
-    color: black;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    -webkit-animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-            animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  .typewriter .type {
-    color: black;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    -webkit-animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-            animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  
-  /* The typing effect */
-  @-webkit-keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @-webkit-keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color:#1d9c9f }
-  }
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color:#1d9c9f}
-  }
+
+
   .bounce {
 
    display: -webkit-box;
@@ -382,16 +352,6 @@ a.fab:hover{
     height: 100%;
 }
 
-img.img{
-    max-width: 500px;
-    max-height: 300px;
-    padding-bottom: 20px;
-    vertical-align: middle;
-    opacity: 0.5;
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    vertical-align: middle;   
-}
 img.img:hover {
     color: white;
     opacity: 1;
@@ -451,22 +411,24 @@ figure {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
             
             
                     
 }
   img.img {
     vertical-align: middle;
-    width:300px;
+    width:400px;
     height:300px;
     opacity: 0.9;
     -webkit-filter: blur(3px);
-    filter: blur(3px);
+    filter: blur(10px);
     vertical-align: middle;
-    filter: brightness(30%);
+    filter: brightness(10%);
     transition: all 400ms ease!important;
+    padding: 10px;
+
 
 
   
@@ -481,14 +443,15 @@ figure {
 
 img.img2{
         vertical-align: middle;
-        width:600px;
-          height:800px;
+        width:400px;
+          height:300px;
           opacity: 0.9;
           -webkit-filter: blur(3px);
         filter: blur(3px);
-        filter: brightness(30%);
+        filter: brightness(10%);
         vertical-align: middle;
         transition: all 400ms ease!important;
+        padding: 10px;
 
       }
   img.img2:hover{
@@ -499,11 +462,11 @@ img.img2{
 
   }
 
-  @media(max-width:600px){
+  @media(max-width:399px){
     img.img2{
         vertical-align: middle;
-        width:300px;
-          height: 400px;
+        width:320px;
+          height: 235px;
   }
 }
 
@@ -511,9 +474,9 @@ img.img2{
     position: absolute;
     top: 50%;
     width: 100%;
-    margin-top: -1em;
+    margin-top: -1.5em;
     margin-bottom:10px; 
-    color: white;
+    color: #facc31;
     text-align: center; 
     font-family: 'Raleway',sans-serif;
     font-size: 25px;
@@ -541,8 +504,11 @@ img.img2{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: black;
+    color: pink;
+    margin-top: 10px;
 }
   @media(min-width:900px){
   .foot {
@@ -587,6 +553,11 @@ img.img2{
 
 h2{
     text-align: center;
+    background-color: chartreuse;
+    padding: 30px;
+    margin: 0px!important;
+    font-weight: 500!important;
+
 }
 
 a:focus, a:hover {
@@ -598,3 +569,110 @@ a:focus, a:hover {
     flex-direction: column;
     text-align: center;
 }
+
+
+/* Changing Navbar to not center it on web*/
+
+@media(min-width: 768px){
+.navbar, .navbar-light, .container{
+    align-items: flex-end!important;
+    padding-left: 20px!important;
+}
+
+
+
+}
+
+/*Change font size on 1000px screens or greater*/
+
+@media(min-width: 1000px){
+.typewriter h1{
+    font-size: 4rem!important;
+
+}
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body { 
+  font-family: 'Open Sans', 'sans-serif';
+  color: #cecece;
+  background: #222;
+  overflow-x: hidden;
+}
+
+
+.description{
+    font-size: 30px;
+}
+  #container {
+margin-top: 8em;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+filter: url(#threshold) blur(0.6px);
+font-weight: 700;
+
+
+
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 10em;
+    text-align: center;
+    user-select: none;
+    color: pink;
+}
+
+@media(max-width:767px) {
+    #text1, #text2{
+        font-size: 6em;
+    }
+    
+}
+.navbar{
+    margin-bottom: 0px!important;
+    border: none!important;
+}
+
+@media(max-width:767px) {
+    .navbar{
+        padding-bottom:15px!important;
+    }
+} 
+
+.nav .navbar-nav .text-right{
+    margin-top: 0px!important;
+}
+
+.collapse .navbar-collapse{
+margin: 0px!important;
+}
+
+#bs-example-navbar-collapse-1{
+    padding: 0px!important;
+}
+
+@media(max-width:768px) {
+    .section1{
+        padding-bottom: 0px;
+        padding-top: 50px;
+    }
+    
+}
+
+#myVideo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  }

@@ -1,14 +1,23 @@
+body{
+    margin: 0px;
+}
+
+
 .flex{
     display: -webkit-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("../img/UConn-IMG.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 250px
+
  
 }
 @media(max-width:500px){
     .flex{
-        margin-top: 95px;
     }
 }
 @media(min-width:700px){
@@ -22,13 +31,11 @@
             -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
                     flex-direction: row;
-            margin-top: 90px;
 }
 }
 @media(min-width:1024px){
     .flex{
-        margin-left: 175px;
-        margin-right: 175px;
+       
     }
 }
 .flex2{
@@ -37,6 +44,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
  
 }
 @media(min-width:1445px){
@@ -69,7 +77,7 @@ p{
     padding-right: 18%;
     padding-top: 2%;
     padding-bottom: 2%; 
-    text-align: center; 
+    text-align: left; 
 }
 
 .p-nopadding{
@@ -85,7 +93,6 @@ a.leftbutton{
     color: black;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    border: black 2px solid;
     padding: 10px;
     text-decoration: none;
     position: fixed;
@@ -101,9 +108,9 @@ a.leftbutton{
 }
 a.leftbutton:hover{
     text-decoration: none;
-    color: white;
-    border: #1d9c9f 2px solid;
-    background-color: #1d9c9f;
+    color: chartreuse;
+    border: black 2px solid;
+    background-color: black;
     -webkit-transition: ease-in .75s;
     transition: ease-in .75s;
 }
@@ -111,6 +118,8 @@ h1{
     margin:0%;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    font-size: 4em;
+    margin-bottom: 20px;
   
 }
 .right{
@@ -119,7 +128,7 @@ display: flex;
 -webkit-box-orient: vertical;
 -webkit-box-direction: normal;
         flex-direction: column;
-        margin: 30px;
+        margin-top: 30px;
         
        
 }
@@ -502,3 +511,54 @@ h2{
     justify-content: center;
 }
 }
+
+
+.flex-info{
+    display: flex;
+    font-size: 16px;
+  
+}
+
+p.sub-text{
+margin: 0px!important;
+    padding: 0pX!important;
+}
+
+.sub-text-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.sub-text-bold{
+font-weight: 700;
+}
+
+.img-contain{
+    width: 25%;
+    height: 50%;
+}
+
+.img-contain-wide{
+    width: 60%;
+}
+
+.img-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+
+hr {
+    margin-top: 0px!important;
+    margin-bottom: 20px!important;
+    border: 0!important;
+    border-top: 10px solid #eee!important;
+    }
+    

@@ -69,11 +69,9 @@ p{
     font-size: 20px;
     line-height: 1.75em;
     margin: 0%;
-    padding-left: 18%;
-    padding-right: 18%;
     padding-top: 2%;
     padding-bottom: 2%; 
-    text-align: center; 
+    text-align: left; 
 }
 
 .p-nopadding{

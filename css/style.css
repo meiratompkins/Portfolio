@@ -101,10 +101,18 @@ background-color: black;
     align-items: center;
     background: linear-gradient(-45deg, #3a2681, #801d43, #1e5e75, #0c6450);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-  
-    
+	animation: gradient 15s ease infinite;  
 }
+
+@media (max-width:768px){
+    .section1{
+        background: black;
+}
+    #myVideo{
+        display: none!important;
+    }
+}
+
 .h1, h1{
     font-family: 'Lato', sans-serif;
     text-align: center;

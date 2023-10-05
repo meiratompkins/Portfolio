@@ -644,7 +644,10 @@ font-weight: 700;
 
 @media(max-width:767px) {
     #text1, #text2{
-        font-size: 6em;
+        font-size: 40px;
+    }
+    #container{
+        margin-top:3em; 
     }
     
 }

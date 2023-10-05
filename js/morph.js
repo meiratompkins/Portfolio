@@ -7,6 +7,8 @@ const texts = [
     "Web",
     "UX",
     "Design",
+    "Digital",
+    "Development",
    
 ];
 

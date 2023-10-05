@@ -610,6 +610,7 @@ body {
   color: #cecece;
   background: #222;
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 

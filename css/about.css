@@ -117,10 +117,6 @@ background-color: black;
   
     
 }
-.h1, h1{
-    font-family: 'Lato', sans-serif;
-    font-size: 5em!important;
-}
 
 #meiraImg{
     max-height: 500px;
@@ -147,12 +143,7 @@ background-color: black;
     #myCarousel{
         display: none;
     }
-    .h1, h1{
-        font-size: 27px !important;
-    }
-    p{
-        font-size: 20px !important;
-    }
+ 
 } 
 @media(max-width: 770px){
     .navbar-brand{
@@ -166,12 +157,19 @@ background-color: black;
         max-height: 300px !important;
         max-width: 300px !important; 
     }
+
+    .section2{
+        margin-left: 5%!important;
+        margin-right:5%!important;
+    }
 }
 p{
-    font-size: 30px;
+    font-size: 15px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     margin-bottom: 1em!important;
+    text-align: center;
+    color: white;
 }
 a.download{
     font-size: 25px;
@@ -288,7 +286,7 @@ a.fab:hover{
     text-decoration: none;
 }
   .section2{
-    padding: 45px;
+    padding: 20px;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
@@ -298,7 +296,7 @@ a.fab:hover{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-            margin-bottom: 50px;
+            margin: 20px 0px;
             margin-left: 10%;
             margin-right: 10%;
   }
@@ -335,9 +333,7 @@ a.fab:hover{
                 align-items: center !important;
         }
   }
-  .innerBox{
-      padding-right: 25px;
-  }
+ 
 
   .wrapper{
       max-width: 700px;
@@ -418,6 +414,8 @@ figure {
                 flex-flow: row wrap;
                         
     }
+
+    
 
  
  
@@ -566,15 +564,6 @@ img.img2{
 }
 
 
-h2{
-    text-align: center;
-    background-color: chartreuse;
-    padding: 30px;
-    margin: 0px!important;
-    font-weight: 500!important;
-
-}
-
 a:focus, a:hover {
     text-decoration: none!important;
 }
@@ -596,6 +585,8 @@ a:focus, a:hover {
 
 
 
+
+
 }
 
 /*Change font size on 1000px screens or greater*/
@@ -613,7 +604,7 @@ a:focus, a:hover {
 body { 
   font-family: 'Open Sans', 'sans-serif';
   color: #cecece;
-  background: #222;
+  background-color: black!important;
   overflow-x: hidden;
 }
 
@@ -663,18 +654,222 @@ margin: 0px!important;
 }
 
 
-
-h2 {
-    text-align: center;
-    background-color: chartreuse;
-    padding: 7px;
-    margin: 0px!important;
-    font-weight: 500!important;
-}
-
 hr {
 margin-top: 0px!important;
 margin-bottom: 20px!important;
 border: 0!important;
 border-top: 10px solid #eee!important;
 }
+
+
+.right {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #438d65, #1d6569, #ff9100);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-bottom: 3px solid pink;
+}
+
+a.leftbutton{
+    font-size: 25px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    text-decoration: none;
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: white;
+
+}
+a.leftbutton:hover{
+    text-decoration: none;
+    color: chartreuse;
+    border: black 2px solid;
+    background-color: black;
+    -webkit-transition: ease-in .75s;
+    transition: ease-in .75s;
+}
+
+h1 {
+    font-size: 300px;
+    opacity: .10;
+    text-transform: uppercase;
+    color: #fff!important;
+    letter-spacing: 5px;
+}
+
+h2 {
+    margin-top: -200px!important;
+    margin-bottom: 100px!important;
+    font-size: 50px!important;
+    text-transform: uppercase;
+    position: relative !important;
+}
+
+
+
+h1{
+    margin: 0%!important;
+    text-align: center!important;
+    font-family: "professor", sans-serif!important;
+        font-size: 6em!important;
+    margin-bottom: 80px!important;
+    padding-top: 60px!important;
+    padding-bottom: 60px!important;
+    text-transform: capitalize!important;
+    filter: drop-shadow(10px 5px 6px #000000)!important;
+}
+
+h2{
+    font-family: "professor", sans-serif!important;
+        text-align: center!important;
+    text-transform: capitalize!important;
+    color: #FFE8EC!important;
+
+}
+
+@media (max-width: 1170px){
+h2 {
+    margin: 40px 0px!important;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    visibility: hidden;
+    font-size: 0px!important;
+    margin: 0px!important;
+    padding:0px!important;
+}
+
+}
+
+
+/*Footer*/
+
+.foot{
+    display: -webkit-box;
+	display: flex;
+	justify-content: space-around;
+	-webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: black;
+    color: pink;
+    padding-bottom:40px;
+    border-top: 2px solid pink;
+}
+  @media(min-width:900px){
+  .foot {
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+        }
+}
+
+.footer{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px; 
+}
+
+.portfolio2{
+    padding: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px; 
+    text-align: center;
+}
+
+a.download{
+    font-size: 25px;
+    color: pink;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border: pink 2px solid;
+    padding: 10px;
+    font-weight: 500;
+
+}
+a.download:hover{
+    text-decoration: none;
+    color: black;
+    border: pink 2px solid;
+    background-color: pink;
+    -webkit-transition: ease-in .75s;
+    transition: ease-in .75s;
+}
+
+a.glyphicon {
+    color: pink !important;
+    font-size: 15px;
+    border: pink 2px solid;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 100%;
+    margin-bottom: 2px;
+}
+
+a.glyphicon:hover {
+    color: black !important;
+    text-decoration: none;
+    border: pink 2px solid;
+    background-color: pink;
+    -webkit-transition: ease-in .75s;
+    transition: ease-in .75s;
+}
+
+.info{
+    padding: 20px;
+}
+.buttonorg{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+    align-items: center;
+}
+
+a.fab {
+    color: pink !important;
+    font-size: 15px!important;
+    border: pink 2px solid;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+a.fab:hover {
+    color: black !important;
+    text-decoration: none;
+    border: pink 2px solid;
+    background-color: pink;
+    -webkit-transition: ease-in .75s;
+    transition: ease-in .75s;
+}
+
+
+
+
+

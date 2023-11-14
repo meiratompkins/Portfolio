@@ -1,3 +1,41 @@
+/*about home*/
+.about p{
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+
+.about{
+    padding-left: 20%!important;
+    padding-right: 20%!important;
+    background-color: white;
+    background-image: url(../img/Background_1.jpg);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.about h2{
+    font-family: "professor", sans-serif!important;
+    text-transform: capitalize!important;
+    font-size: 45px!important;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    color: black!important;
+    text-align: center;
+}
+
+.typewriter{
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  
+
+}
+
+.box1{
+padding-top: 65px;
+}
+
 .navbar, .navbar-light {
 	border-radius: 0;
 	border: none;
@@ -15,11 +53,15 @@
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: end;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     
 }
+
+
+
+
 .nav li {
 	display: inline;
 	color: black;
@@ -60,6 +102,7 @@
 .navbar-toggle .icon-bar {
 background-color: black;
 }
+
 .nav .navbar-nav .text-right{
     align-content: flex-end;
 }
@@ -67,6 +110,16 @@ background-color: black;
     display: none!important;
     max-height: 100px;
     padding-bottom: 20px;
+}
+
+.top-bar{
+    background: linear-gradient(-45deg, #5275A9, #427673);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.top-bar a h3{
+    color: white!important;
 }
 
 
@@ -93,23 +146,36 @@ background-color: black;
     
 
 .section1{
-    padding-bottom: 160px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #3a2681, #801d43, #1e5e75, #0c6450);
+    background: linear-gradient(-300deg, #532262, #7c2038, #db6934, #39588b, #2d7d6a);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;  
+    text-align: center;
 }
 
 @media (max-width:768px){
     .section1{
         background: black;
+        padding-top: 90px;
+        height: 300px!Important;
 }
     #myVideo{
         display: none!important;
     }
+
+    img.img2{
+        width:375px!important;
+        height:270px!important;
+    }
+
+    .portfolio2{
+        text-align: center;
+    }
+
+
 }
 
 .h1, h1{
@@ -172,7 +238,7 @@ p{
     margin-bottom: 1em!important;
 }
 a.download{
-    font-size: 25px;
+    font-size:15px;
     color: pink;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -210,10 +276,12 @@ a.download2:hover{
 
 a.glyphicon {
     color: pink !important;
-    font-size: 36px;
+    font-size:15px;
     border: pink 2px solid;
-    padding: 10px;
+    padding: 8px;
     margin-left: 10px;
+    border-radius: 100%;
+    margin-bottom:2px;
 }
 a.glyphicon:hover{
     color: black !important;
@@ -225,10 +293,11 @@ a.glyphicon:hover{
 }
 a.fab {
     color: pink !important;
-    font-size: 36px;
+    font-size:15px!important;
     border: pink 2px solid;
-    padding: 10px;
+    padding: 8px;
     margin-left: 10px;
+    border-radius: 100%;
 }
 a.fab:hover{
     color: black !important;
@@ -451,15 +520,16 @@ figure {
 
 img.img2{
         vertical-align: middle;
-        width:400px;
-          height:300px;
+        width:600px;
+          height:400px;
           opacity: 0.9;
           -webkit-filter: blur(3px);
         filter: blur(3px);
         filter: brightness(10%);
         vertical-align: middle;
         transition: all 400ms ease!important;
-        padding: 10px;
+        margin: 10px;
+        border: 2px solid white;
        
 
       }
@@ -507,7 +577,7 @@ img.img2{
 .foot{
     display: -webkit-box;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	-webkit-box-align: center;
     align-items: center;
     -webkit-box-orient: vertical;
@@ -518,12 +588,13 @@ img.img2{
     background-color: black;
     color: pink;
     margin-top: 10px;
+    padding-bottom:40px;
 }
   @media(min-width:900px){
   .foot {
 	display: -webkit-box;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	-webkit-box-align: center;
     align-items: center;
     -webkit-box-orient: horizontal;
@@ -537,12 +608,9 @@ img.img2{
 .buttonorg{
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    -webkit-box-align: center;
-            align-items: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 .footer{
     font-family: 'Raleway',sans-serif;
@@ -551,7 +619,7 @@ img.img2{
 .portfolio2{
     padding: 30px;
     font-family: 'Raleway',sans-serif;
-    font-size: 20px; 
+    font-size: 15px; 
 }
 @media(max-width: 350px){
     .typewriter p.type{
@@ -560,14 +628,7 @@ img.img2{
 }
 
 
-h2{
-    text-align: center;
-    background-color: chartreuse;
-    padding: 30px;
-    margin: 0px!important;
-    font-weight: 500!important;
 
-}
 
 a:focus, a:hover {
     text-decoration: none!important;
@@ -597,6 +658,7 @@ a:focus, a:hover {
 @media(min-width: 1000px){
 .typewriter h1{
     font-size: 4rem!important;
+    border-bottom: 2px solid white;
 
 }
 }
@@ -609,7 +671,6 @@ body {
   color: #cecece;
   background: #222;
   overflow-x: hidden;
-  overflow: hidden;
 }
 
 
@@ -617,16 +678,13 @@ body {
     font-size: 30px;
 }
   #container {
-margin-top: 8em;
+margin-top: 6.6em;
 width: 100vw;
 display: flex;
 justify-content: center;
 align-items: center;
 filter: url(#threshold) blur(0.6px);
 font-weight: 700;
-
-
-
 }
 
 #text1,
@@ -634,12 +692,17 @@ font-weight: 700;
     position: absolute;
     width: 100%;
     display: inline-block;
-    font-family: "Raleway", sans-serif;
-    font-size: 10em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8em;
     text-align: center;
     user-select: none;
     color: pink;
 }
+
+
+
 
 @media(max-width:767px) {
     #text1, #text2{
@@ -653,6 +716,10 @@ font-weight: 700;
 .navbar{
     margin-bottom: 0px!important;
     border: none!important;
+
+    background-position: bottom center;
+    border-radius: 0px!important
+    ;
 }
 
 @media(max-width:767px) {

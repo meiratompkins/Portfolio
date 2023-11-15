@@ -12,7 +12,7 @@ const texts = [
    
 ];
 
-const morphTime = 1;
+const morphTime = 1.7;
 const cooldownTime = 0.25;
 
 let textIndex = texts.length - 1;

@@ -780,14 +780,14 @@ hr {
 }
   @media(min-width:900px){
   .foot {
-	display: -webkit-box;
-	display: flex;
-	justify-content: space-around;
-	-webkit-box-align: center;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-direction: row;
+    flex-direction: row;
         }
 }
 

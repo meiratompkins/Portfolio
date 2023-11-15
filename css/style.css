@@ -12,6 +12,10 @@
     background-image: url(../img/Background_1.jpg);
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about h2{
@@ -619,12 +623,33 @@ img.img2{
 .portfolio2{
     padding: 30px;
     font-family: 'Raleway',sans-serif;
-    font-size: 15px; 
+    font-size: 12px; 
 }
 @media(max-width: 350px){
     .typewriter p.type{
         font-size: 15px !important;
     }
+}
+
+.line-button{
+    background: linear-gradient(to right, #fff2d4, #ffffff), linear-gradient(to right, #ff9cef, #ffffff);
+    background-size: 100% 0.07em, 0 0.07em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+.line-button:hover{
+    background-size: 0 0.07em, 100% 0.07em;
+    text-decoration: none!important;
+    color:black;
+
 }
 
 
@@ -726,6 +751,15 @@ font-weight: 700;
     .navbar{
         padding-bottom:15px!important;
     }
+    .about{
+        padding-left: 8%!important;
+        padding-right:8%!important;
+    }
+
+    .about p{
+        font-size: 15px!important;
+    }
+
 } 
 
 .nav .navbar-nav .text-right{

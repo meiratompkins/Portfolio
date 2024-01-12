@@ -713,7 +713,20 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background: #fff5f7;
+}
+
+.img-flex .img-contain-wide{
+    margin-top: 0px;
 }
 
 

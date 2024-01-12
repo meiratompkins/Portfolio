@@ -6,8 +6,8 @@
 }
 
 .about{
-    padding-left: 20%!important;
-    padding-right: 20%!important;
+    padding-left: 25%!important;
+    padding-right: 25%!important;
     background-color: white;
     background-image: url(../img/Background_1.jpg);
     border-top: 3px solid white;
@@ -26,6 +26,26 @@
     margin-bottom: 0px!important;
     color: black!important;
     text-align: center;
+}
+
+
+h2{
+    font-family: "professor", sans-serif!important;
+    text-transform: capitalize!important;
+    font-size: 25px!important;
+    margin-top: 50px!important;
+    margin-bottom: 20px!important;
+    color: white!important;
+    text-align: center;
+}
+
+.about h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 600;
 }
 
 .typewriter{
@@ -185,6 +205,7 @@ background-color: black;
 .h1, h1{
     font-family: 'Lato', sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #meiraImg{
@@ -524,8 +545,8 @@ figure {
 
 a img.img2{
         vertical-align: middle;
-        width:600px;
-          height:400px;
+        width: 450px;
+        height: 310px;
           opacity: 0.9;
           -webkit-filter: blur(3px);
         filter: blur(3px);

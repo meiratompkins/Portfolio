@@ -1,4 +1,14 @@
 /*about home*/
+
+.about h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
 .about p{
     font-size: 16px;
     text-align: center;
@@ -39,14 +49,7 @@ h2{
     text-align: center;
 }
 
-.about h3{
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    font-weight: 600;
-}
+
 
 .typewriter{
     border-bottom: 2px solid white;
@@ -545,8 +548,8 @@ figure {
 
 a img.img2{
         vertical-align: middle;
-        width: 450px;
-        height: 310px;
+        width: 450px!important;
+        height: 310px!important;
           opacity: 0.9;
           -webkit-filter: blur(3px);
         filter: blur(3px);
